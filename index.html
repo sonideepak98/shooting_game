@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shooting Game</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        background-color: rgb(109, 191, 176);
+      }
+      h1 {
+        margin: 0px;
+        margin-bottom: 10px;
+        font-size: 2.5em;
+        color: rgb(0, 0, 0);
+      }
+      .controls {
+        display: grid;
+        grid-template-columns: 60px 500px;
+        color: black;
+        margin-bottom: 20px;
+      }
+      .black {
+        background-color: rgb(21, 7, 210);
+        color: white;
+        padding: 2px;
+      }
+      .white {
+        background-color: white;
+        color: black;
+        padding: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Shooting Game</h1>
+
+    <div class="controls">
+      <div><span class="black"> Player1</span></div>
+      <div>
+        --- up, down, left, right arrow key to move and space key to shoot
+      </div>
+      <div><span class="white"> Player2</span></div>
+      <div>--- w(up), a(left), x(down), d(right) to move and s keys to shoot</div>
+    </div>
+    <canvas id="game"></canvas>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
